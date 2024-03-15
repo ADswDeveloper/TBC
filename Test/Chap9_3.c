@@ -14,6 +14,7 @@ int main()
     // stash test
     // commit test
     // commit test2
+
+    // git add test(stage)
     return 0;
 }
-
