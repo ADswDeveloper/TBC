@@ -93,10 +93,21 @@ int main()
             putchar(*(head++)); // *head++ 하면 참조한다음 가리키는 문자에 +1 함. 
         } // 괄호 꼭 주의!
         
+        // head = heart; // 가능. (포인터) 변수에 값(주소) 저장.
+        // heart = head;  // 불가능. 배열 이름은 주소 그 자체. lvalue가 아님. lvalue는 heart[0] 이런 것.
+
+    }
+
+    {
+        char* word = "Goggle";
+        word[2] = 'o'; // 불가능. 텍스트 세그먼트에 저장된 문자열 수정 불가.
         
-
-
-
+        const char* str1 = "When";
+        const char* str2;
+        str2 = str1; // shallow copy?
+        
+        printf("%s %p %p\n", str1, str1, &str1); // 마지막 주소는 다름. 두번째 %p 와 세번째 %p 크기가 다름 -> 다른 메모리 영역에 저장됨을 유추 가능.
+        printf("%s %p %p\n", str2, str2, &str2);
     }
     return 0;
 }
