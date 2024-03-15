@@ -34,6 +34,10 @@ int main()
     // No. 첫 원소의 주소. 배열의 이름은 object가 아님. 하지만 식별자로는 쓸 수 있음.
     arr[0] = 7; // arr[0] 은 식별자는 아니지만, Object임. 해당 표현식을 통해 메모리 공간에 접근할 수 있음.
     
+    // 근데 생각해보니 arr[0]도 arr[1]이랑 구분되니까 식별자 아님? 
+    // arr도, arr이라는 대표 이름으로 메모리에 공간을 받아오는 것. 근데 주소가 담겨있으므로(주소 자체라고 표현했지만) lvalue는 맞지 않나? unmodifiable lvalue.
+    // arr[0]는 당연 lvalue겠지.
+
     /*
         lvalue is an expression 'referring' to an object. (KNK p. 197)
         
