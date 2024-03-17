@@ -57,7 +57,7 @@ int main()
     // 글자 수보다 i의 상한이 매칭되지 않으니까.
     // c 프로그래머를 믿는 C언어의 철학때문에 되는 것들임.
     printf("\n");
-    printf("Hello");
+    
     return 0;
 }
 
